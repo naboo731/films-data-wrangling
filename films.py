@@ -15,9 +15,16 @@ def exploration():
 # exploration()
 
 
-def grouping_films_productionCo():
-    grouped_productionCos = df.groupby('Production Company')
-    print(grouped_productionCos)
+def grouping_films_director():
+    grouped_directors = df.groupby('Director')
+    print(grouped_directors)
 
 
-grouping_films_productionCo()
+# grouping_films_director()
+
+
+def films_2000s():
+    movies_after_2000 = df.loc[df['Release Year']] >= '2000'
+    print(movies_after_2000)
+
+# films_2000s()
