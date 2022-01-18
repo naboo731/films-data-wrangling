@@ -42,3 +42,6 @@ missing_actor3 = df['Actor 3'].isnull().value_counts()
 print(f'Location: {missing_locations}, Fun Facts: {missing_fun_facts}, Production: {missing_production}, Distributor: {missing_distributor}, Writer: {missing_writers}, Actor 1: {missing_actor1}, Actor 2: {missing_actor2}, Actor 3: {missing_actor3}')
 
 df.drop('Fun Facts', 1)
+
+
+df['index'] = df.index
